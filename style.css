@@ -1,0 +1,83 @@
+body {
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 100px;
+    max-width: 100%;
+    padding: 50px;
+    margin: 0px auto;
+}
+
+input {
+    width: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+input[type="color"] {
+    width: 50%;
+    margin: 0px 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+button {
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.sketchPad {
+    width: 60%;
+    background-color: white;
+    height: 400px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex: 1 1 0%;
+    border: none;
+}
+
+.col {
+    height: 100%;
+    flex: 1 1 0%;
+    z-index: 10;
+    border: none;
+}
+
+.gridItem {
+    border: 1px solid #0000;
+    
+}
+
+
+@media screen and (max-width: 765px){
+    .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .sketchPad {
+       width: 100%;
+    }
+
+}
